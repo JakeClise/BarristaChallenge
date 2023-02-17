@@ -26,7 +26,31 @@ public class TestOrders {
         order5.addItem(item4);
         order5.addItem(item1);
 
-        order3.displayOrder();        
+        //Test the result for order 3
+        order3.displayOrder();
+
+        //Test getStatusMessage
+        order3.setReady(true);
+        System.out.println(order3.getStatusMessage());
+
+        //Test getOrderTotal
+        System.out.println("The total is: " + order3.getOrderTotal());
+
+        //Displaying Orders
+        System.out.println("Order 1\n");
+        order1.displayOrder();
+
+        System.out.println("Order 2\n");
+        order2.displayOrder();
+
+        System.out.println("Order 3\n");
+        order3.displayOrder();
+
+        System.out.println("Order 4\n");
+        order4.displayOrder();
+
+        System.out.println("Order 5\n");
+        order5.displayOrder();
 
     }
 }
